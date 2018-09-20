@@ -3,11 +3,11 @@ import time
 
 wordlist = open("wordlist.txt")
 # imports a list of possible words from a .txt located in the /res/ directory.
-# 
 wordlist = wordlist.readlines()
 alphaChars = "abcdefghijklmnopqrstuvwxyz"
 dash = "-"
-# used later for determining the validity of a character entered.
+# used later for determining the validity of a character entered and also whether or not a dash
+# in the word exists. Will see full use later.
 
 word = ""
 lettersRemaining = None
@@ -41,7 +41,6 @@ def initvars():
     time.sleep(1)
     # print(word)
     # used for debugging purposes
-
 
 initvars()
 while True:
@@ -127,8 +126,3 @@ while True:
         # adds the incorrect letter guessed to a list to display later (precents user from
         # guessing the same letter again.)
         time.sleep(1)
-
-
-
-        
-
